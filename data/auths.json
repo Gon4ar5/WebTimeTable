@@ -1,0 +1,17 @@
+[
+  {
+    "login": "admin",
+    "password": "admin",
+    "property": 1
+  },
+  {
+    "login": "student",
+    "password": "student",
+    "property": 2
+  },
+  {
+    "login": "qwe",
+    "password": "qwe",
+    "property": 2
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "number": 1,
+    "facility": "FIT",
+    "specialization": "ISIT",
+    "course": 3
+  },
+  {
+    "number": 4,
+    "facility": "FIT",
+    "specialization": "POIT",
+    "course": 3
+  },
+  {
+    "number": 5,
+    "facility": "FIT",
+    "specialization": "POIT",
+    "course": 2
+  },
+  {
+    "number": 9,
+    "facility": "FIT",
+    "specialization": "DEVI",
+    "course": 1
+  }
+  ]

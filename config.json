@@ -1,0 +1,26 @@
+{
+  "app": {
+    "port": 3000
+  },
+  "db": {
+    "name": "d57c0ba4ropmt9",
+    "user": "ilgvamfjvoppgp",
+    "pass": "be5c9b32dba9dd682612d324aad8a34302d27bd759e1a1d0c7f885d36e7c92b6",
+    "options": {
+      "dialect": "postgres",
+      "dialectOptions": {
+        "ssl": true
+      },
+      "host": "ec2-50-19-224-165.compute-1.amazonaws.com",
+      "define": {
+        "timestamps": false,
+        "paranoid": false
+      },
+      "logging": false
+    }
+  },
+  "cookie": {
+    "key": "secret key",
+    "auth": "__auth_id"
+  }
+}

@@ -1,0 +1,10 @@
+2018-05-22T14:16:50.240Z - [32minfo[39m: /api/auth/ifExist POST
+ body: {"login":"admin","password":"admin"}
+2018-05-22T14:18:12.549Z - [32minfo[39m: /api/auth/ifExist POST
+ body: {"login":"admin","password":"admin"}
+2018-05-22T14:23:14.360Z - [32minfo[39m: /api/auth/ifExist POST
+ body: {"login":"admin","password":"admin"}
+2018-05-22T14:23:51.334Z - [32minfo[39m: /api/auth/ifExist POST
+ body: {"login":"admin","password":"admin"}
+2018-05-22T14:24:56.486Z - [32minfo[39m: /api/auth/ifExist POST
+ body: {"login":"admin","password":"admin"}

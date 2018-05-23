@@ -1,0 +1,12 @@
+2018-05-22T05:09:48.857Z - [32minfo[39m: /api/auth/createAuth POST
+ body: {"login":"wqe","password":"123"}
+2018-05-22T05:12:36.144Z - [32minfo[39m: /api/auth/delIdth POST
+ body: {"id":1}
+2018-05-22T05:12:46.127Z - [32minfo[39m: /api/auth/delIdAndProp POST
+ body: {"id":1}
+2018-05-22T05:12:48.629Z - [32minfo[39m: /api/auth/delIdAndProp POST
+ body: {"id":2}
+2018-05-22T05:12:51.748Z - [32minfo[39m: /api/auth/delIdAndProp POST
+ body: {"id":3}
+2018-05-22T05:12:55.064Z - [32minfo[39m: /api/auth/delIdAndProp POST
+ body: {"id":4}

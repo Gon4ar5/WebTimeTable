@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Auth</title>
+    <link rel="stylesheet" href="site.css" />
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+</head>
+<body>
+    <form id="form" action="/api/auth/createAuth" method="post">
+        <div>
+            <p>Login</p>
+            <input type="text" id="login"></table></br>
+        </div>
+        <div>
+            <p>Password</p>
+            <input type="text" id="pass"></table></br>
+        </div>
+        <button>Register</button>
+    </form>
+    <form>
+        <input type="button" value="Sign In" onclick="qwe();return false;"/>
+    </form>
+    <script>
+        function qwe() {
+            document.location.href="/auth.html";
+        }
+    </script>
+</body>
+</html>

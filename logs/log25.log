@@ -1,0 +1,9 @@
+2018-05-23T06:04:53.886Z - [32minfo[39m: /api/auditorium/createAu POST
+ body: {"campus":"1","number":"9"}
+2018-05-23T06:08:57.412Z - [32minfo[39m: /api/auditorium/readAuditorium POST
+2018-05-23T06:09:07.118Z - [32minfo[39m: /api/auditorium/readAuditorium POST
+2018-05-23T06:09:26.966Z - [32minfo[39m: /api/auditorium/createAu POST
+ body: {"campus":"1","number":"1"}
+2018-05-23T06:09:32.869Z - [32minfo[39m: /api/auditorium/readAuditorium POST
+2018-05-23T06:09:39.397Z - [32minfo[39m: /api/auditorium/delId POST
+ body: {"id":"7"}

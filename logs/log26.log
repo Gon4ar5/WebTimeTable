@@ -1,0 +1,10 @@
+2018-05-23T06:09:45.029Z - [32minfo[39m: /api/auditorium/readAuditorium POST
+2018-05-23T06:09:50.877Z - [32minfo[39m: /api/auditorium/updAu POST
+ body: {"id":"6","campus":"1","number":"1"}
+2018-05-23T06:09:55.884Z - [32minfo[39m: /api/auditorium/updAu POST
+ body: {"id":"6","campus":"1","number":"1"}
+2018-05-23T06:10:08.845Z - [32minfo[39m: /api/auditorium/readAuditorium POST
+2018-05-23T06:10:18.381Z - [32minfo[39m: /api/auditorium/updAu POST
+ body: {"id":"6","campus":"1","number":"1"}
+2018-05-23T06:10:23.386Z - [32minfo[39m: /api/auditorium/updAu POST
+ body: {"id":"6","campus":"1","number":"1"}

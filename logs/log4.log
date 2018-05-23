@@ -1,0 +1,8 @@
+2018-05-21T18:48:58.009Z - [32minfo[39m: /api/createAuth POST
+2018-05-21T18:48:58.351Z - [32minfo[39m: /api/createAuth POST
+2018-05-21T18:58:06.340Z - [32minfo[39m: /api/readAuth POST
+2018-05-21T18:58:27.905Z - [32minfo[39m: /api/readAuthId POST
+2018-05-21T18:59:06.676Z - [32minfo[39m: /api/readAuthId POST
+2018-05-21T18:59:31.647Z - [32minfo[39m: /api/readAuthId POST
+2018-05-21T19:00:11.082Z - [32minfo[39m: /api/readAuthId POST
+2018-05-21T19:01:35.344Z - [32minfo[39m: /api/auth/readAuthId POST

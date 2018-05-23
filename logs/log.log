@@ -1,0 +1,9 @@
+2018-02-15T22:57:23.979Z - [32minfo[39m: /api/office/di POST
+ body: {"id":2}
+2018-03-27T05:09:45.665Z - [32minfo[39m: /api/agent/readAll GET
+2018-03-27T05:10:29.670Z - [32minfo[39m: /api/agent/readAll GET
+2018-03-27T05:11:25.819Z - [32minfo[39m: /api/agent/readAll GET
+2018-03-27T05:11:33.544Z - [32minfo[39m: /api/agent/readAll GET
+2018-03-27T05:13:43.734Z - [32minfo[39m: /api/agent/readAgId GET
+2018-03-27T05:14:26.013Z - [32minfo[39m: /api/property/readall GET
+2018-03-27T05:16:34.406Z - [32minfo[39m: /api/property/readall POST

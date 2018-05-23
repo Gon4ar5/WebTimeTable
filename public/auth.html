@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Auth</title>
+    <link rel="stylesheet" href="site.css" />
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <p>login</p>
+            <input type="text" id="login" name="login"></table></br>
+        </div>
+        <div>
+            <p>password</p>
+            <input type="text" id="pass" name="pass"></table></br>
+        </div>
+        <input type="button" value="Submit" onclick="ifexist()"/>
+    </form>
+    <script>
+        function ifexist() {
+            var xhr = new XMLHttpRequest();
+            var json = JSON.stringify({
+                login: document.getElementById("login").value,
+                password: document.getElementById("pass").value
+            });
+
+            xhr.open("POST", "http://localhost:3000/api/auth/ifExist", false)
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send(json);
+            if (xhr.status != 200) {
+                alert( xhr.status + ': ' + xhr.statusText );
+            } else {
+                if (xhr.responseText === '1'){
+                        document.location.href="/startAdminPage.html";
+                }
+                else if(xhr.responseText === '2'){
+                    document.location.href="/startUserPage.html";
+                }
+                else{
+                    alert("Неверный логин/пароль");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

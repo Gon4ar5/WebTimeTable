@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="site.css" />
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+</head>
+<body>
+    <form>
+        <div>
+            <p>id</p>
+            <input type="text" id="id1"></table></br>
+            <p>day_number</p>
+            <input type="text" id="day_number"></table></br>
+            <p>empl_time</p>
+            <input type="text" id="empl_time"></table></br>
+            <input type="button" value="Изменить" onclick="updateDates()"/>
+        </div>
+    </form>
+    <script>
+        function updateDates() {
+            var xhr = new XMLHttpRequest();
+            var json = JSON.stringify({
+                id: document.getElementById("id1").value,
+                day_number: document.getElementById("day_number").value,
+                empl_time: document.getElementById("empl_time").value
+            });
+
+            xhr.open("POST", "http://localhost:3000/api/dates/updDate", false)
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send(json);
+            if (xhr.status != 200) {
+                alert( xhr.status + ': ' + xhr.statusText );
+            } else {
+                alert( xhr.responseText );
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="site.css" />
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+</head>
+<body>
+    <form>
+        <div>
+            <p>id</p>
+            <input type="text" id="id1"></table></br>
+            <p>campus</p>
+            <input type="text" id="campus"></table></br>
+            <p>number</p>
+            <input type="text" id="number"></table></br>
+            <input type="button" value="Добавить" onclick="updateAuditorium()"/>
+        </div>
+    </form>
+    <script>
+        function updateAuditorium() {
+            var xhr = new XMLHttpRequest();
+            var json = JSON.stringify({
+                id: document.getElementById("id1").value,
+                campus: document.getElementById("campus").value,
+                number: document.getElementById("number").value
+            });
+
+            xhr.open("POST", "http://localhost:3000/api/auditorium/updAu", false)
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send(json);
+            if (xhr.status != 200) {
+                alert( xhr.status + ': ' + xhr.statusText );
+            } else {
+                alert( xhr.responseText );
+            }
+        }
+    </script>
+</body>
+</html>

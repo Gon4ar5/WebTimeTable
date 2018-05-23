@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="site.css" />
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+</head>
+<body>
+    <table border="1" id="TimeTable">
+        <caption>Расписание занятий</caption>
+        <tr>
+            <th>День</th>
+            <th>Время</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+        </tr>
+        <script type="text/javascript">
+            var table = document.getElementById('TimeTable');
+            var td = table.getElementsByTagName("td");
+            table.insertRow(-1);
+            table.insertRow(1);
+            table.insertRow(2);
+        </script>
+    </table>
+    <form>
+        <input type="button" value="Изменить" onclick="ifchange()"/>
+    </form>
+    <script>
+    function ifchange() {
+        document.location.href="/change.html";
+    }
+    </script>
+</body>
+</html>

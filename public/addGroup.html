@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="site.css" />
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+</head>
+<body>
+    <form>
+        <div>
+            <p>number</p>
+            <input type="text" id="number"></table></br>
+            <p>facility</p>
+            <input type="text" id="facility"></table></br>
+            <p>specialization</p>
+            <input type="text" id="specialization"></table></br>
+            <p>course</p>
+            <input type="text" id="course"></table></br>
+            <input type="button" value="Добавить" onclick="addGroup()"/>
+        </div>
+    </form>
+    <script>
+        function addGroup() {
+            var xhr = new XMLHttpRequest();
+            var json = JSON.stringify({
+                number: document.getElementById("number").value,
+                facility: document.getElementById("facility").value,
+                specialization: document.getElementById("specialization").value,
+                course: document.getElementById("course").value
+            });
+
+            xhr.open("POST", "http://localhost:3000/api/group/createG", false)
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send(json);
+            if (xhr.status != 200) {
+                alert( xhr.status + ': ' + xhr.statusText );
+            } else {
+                alert( xhr.responseText );
+            }
+        }
+    </script>
+</body>
+</html>

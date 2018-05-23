@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="site.css" />
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+</head>
+<body>
+    <form>
+        <div>
+            <p>id</p>
+            <input type="text" id="id1"></table></br>
+            <p>type</p>
+            <input type="text" id="type"></table></br>
+            <input type="button" value="Изменить" onclick="updateET()"/>
+        </div>
+    </form>
+    <script>
+        function updateET() {
+            var xhr = new XMLHttpRequest();
+            var json = JSON.stringify({
+                id: document.getElementById("id1").value,
+                type: document.getElementById("type").value
+            });
+
+            xhr.open("POST", "http://localhost:3000/api/employment_type/updEt", false)
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send(json);
+            if (xhr.status != 200) {
+                alert( xhr.status + ': ' + xhr.statusText );
+            } else {
+                alert( xhr.responseText );
+            }
+        }
+    </script>
+</body>
+</html>

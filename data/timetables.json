@@ -1,0 +1,42 @@
+[
+  {
+    "id_employment_name": 1,
+    "id_employment_type": 1,
+    "id_groups": 1,
+    "id_lecturers": 1,
+    "id_auditoriums": 1,
+    "id_dates": 1
+  },
+  {
+    "id_employment_name": 2,
+    "id_employment_type": 2,
+    "id_groups": 2,
+    "id_lecturers": 2,
+    "id_auditoriums": 2,
+    "id_dates": 2
+  },
+  {
+    "id_employment_name": 3,
+    "id_employment_type": 3,
+    "id_groups": 3,
+    "id_lecturers": 3,
+    "id_auditoriums": 3,
+    "id_dates": 3
+  },
+  {
+    "id_employment_name": 4,
+    "id_employment_type": 4,
+    "id_groups": 4,
+    "id_lecturers": 4,
+    "id_auditoriums": 4,
+    "id_dates": 4
+  },
+  {
+    "id_employment_name": 1,
+    "id_employment_type": 1,
+    "id_groups": 1,
+    "id_lecturers": 1,
+    "id_auditoriums": 1,
+    "id_dates": 1
+  }
+]
