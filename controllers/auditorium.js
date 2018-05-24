@@ -30,6 +30,7 @@ class AuditoriumController extends CrudController {
 
     async updAu(req, res)
     {
+
         await db.auditoriums.update(req.body);
         res.send("UPDATED");
     }
