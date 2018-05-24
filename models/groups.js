@@ -7,7 +7,6 @@ module.exports = (Sequelize, sequelize) => {
         },
         number: { type: Sequelize.INTEGER },
         facility: { type: Sequelize.STRING },
-        specialization: { type: Sequelize.STRING },
-        course: { type: Sequelize.STRING }
+        specialization: { type: Sequelize.STRING }
     });
 };

@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title></title>
-    <script src="form.js"></script>
-    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="site.css"/>
     <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
 </head>
 <body>
-    <table border="1" id="TimeTable">
-        <caption>Расписание занятий</caption>
-        <tr>
-            <th>День</th>
-            <th>Время</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
-            <th>10</th>
-        </tr>
-        <script type="text/javascript">
-            var table = document.getElementById('TimeTable');
-            var td = table.getElementsByTagName("td");
-            table.insertRow(-1);
-            table.insertRow(1);
-            table.insertRow(2);
-        </script>
-    </table>
-    <form>
-        <input type="button" value="Изменить" onclick="ifchange()"/>
-    </form>
-    <script>
-    function ifchange() {
-        document.location.href="/change.html";
+<table border="1" id="TimeTable" name="TimeTable">
+    <tbody>
+    <caption>Расписание занятий</caption>
+    <tr>
+        <td>День</td>
+        <td>Время</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+    </tr>
+    </tbody>
+</table>
+<script type="text/javascript">
+    let table = document.getElementById('TimeTable');
+    for (let i = 1; i < 21; i++) {
+        var row = table.insertRow(i);
+        for (let j = 0; j < 12; j++) {
+            var cell1 = row.insertCell(j);
+            if((j == 1 && i == 1) || (j == 1 && i == 5) || (j == 1 && i == 9) || (j == 1 && i == 13) || (j == 1 && i == 17)) {
+                cell1.innerHTML = "8.00-9.35";
+            }
+            else if(j == 1 && i == 2 || (j == 1 && i == 6) || (j == 1 && i == 10) || (j == 1 && i == 14) || (j == 1 && i == 18)) {
+                cell1.innerHTML = "9.50-11.25";
+            }
+            else if(j == 1 && i == 3 || (j == 1 && i == 7) || (j == 1 && i == 11) || (j == 1 && i == 15) || (j == 1 && i == 19)) {
+                cell1.innerHTML = "11.40-13.15";
+            }
+            else if(j == 1 && i == 4 || (j == 1 && i == 8) || (j == 1 && i == 12) || (j == 1 && i == 16) || (j == 1 && i == 20)) {
+                cell1.innerHTML = "13.50-15.25";
+            }
+
+            else {
+                cell1.innerHTML = "tyty";
+            }
+        }
     }
-    </script>
+</script>
+<form>
+    <input type="button" value="Изменить" onclick="ifchange()"/>
+</form>
+<script>
+    function ifchange() {
+        document.location.href = "/change.html";
+    }
+</script>
 </body>
 </html>

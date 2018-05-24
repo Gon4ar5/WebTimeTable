@@ -2,3 +2,9 @@
  body: {"login":"admin","password":"admin"}
 2018-05-23T07:51:28.108Z - [32minfo[39m: /api/auth/ifExist POST
  body: {"login":"admin","password":"admin"}
+2018-05-23T09:22:29.136Z - [32minfo[39m: /api/auth/ifExist POST
+ body: {"login":"admin","password":"admin"}
+2018-05-23T09:32:13.458Z - [32minfo[39m: /api/auth/ifExist POST
+ body: {"login":"qwe","password":"qwe"}
+2018-05-23T09:32:27.967Z - [32minfo[39m: /api/auth/ifExist POST
+ body: {"login":"rfdv","password":"rgf"}
